@@ -1,0 +1,65 @@
+1. HTML розмітка, основних блоків:
+Header, navigation, 
+body(main > section1,2,3...), заголовки, списки, посилання, зображення + alt, наповнення текстом,
+Footer (підвал), адреса, навігація, списки..
+
+2. CSS:
+1) Виділення основних кольорів 3-4 (для root)
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #0095ca;
+  --accent-color: #0095ca;
+  --primery-white-color: #ffffff;
+}
+
+3. Присвоєюмо основні claas(и) і span(и) + посилання + кнопки
+	1) додаємо кольори
+	2) додаємо фони якщо потрібно(кнопки/посилання)
++ hover
++ active
++ focus
+
+	3) прибираємо нижнє підчеркнення в посиланнях і кнопках:
+	text-decoration: none;
+
+	4) стираємо крапки в списках:
+ul {
+  list-style: none;
+}
+/* АБО */
+.list {
+  list-style: none;
+}
+
+
+
+
+4. body {
+  background-color: ffffff;
+  color: var(--primary-text-color);
+   
+  Пізніше:
+  + ще буде основний шрифт font-family: montserrat, sans-serif;
+  + відступи (по запросу дизайнера) letter-spacing: -0.015em;
+  + основний розмір шрифта  font-size: 18px;
+  + лінія висоти (по запросу дизайнера) line-height: 1.67;
+ }
+ 
+ 5. Натягуємо шрифти:
+ 
+	1) Основний підтягуємо в Body
+	2) Якщо шрифт заголовків однаковий: робимо таку штуку
+ h1, h2, h3, h4, h5, h6 {
+  font-family: Comfortaa;
+}
+
+	3) По більшості шрифтів:
+font-weight: bold (= 700); - жирність (слова змінюємо на цифри) 
+font-size: 16px;  - розмір 
+line-height: 1.85; - рх замінюємо на множник
+
+при потребі: 
+font-family: - якщо відрізняється від Body
+line-height: - якщо відрізняється від Body
+
+  
