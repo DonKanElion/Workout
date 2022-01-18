@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 
 <body>
     <!-- Шапка сайта -->
-    <header>
+    <header class="page-herder">
         <!-- NAV - ОСНОВНА навігація  -->
-       <nav>
+       <nav class="container">
         <!-- посилання (гугл) або слеш "/" - повернення на головну -->
             <a href="http://google.com">
                 <img src="./images/logo.svg" alt="logo">  
                 photo            
             </a>
-            <ul>
+            <ul class="list">
                 <!-- Валідна ХОРОША розмітка навігації сайта/меню/список -->
                 <li><a href="">Features</a></li>
                 <li><a href="">Pricing</a></li>
@@ -27,128 +37,171 @@
                 <li><a href="./wireframes.html">Wireframes</a></li>
             </ul>   
 
-            <ul>
-                <li><a href="">Log in</a></li>
-                <li><a href="">Register</a></li>
+            <ul class="list">
+                <li><a href="" class="button primery">Log in</a></li>
+                <li><a href="" class="button secondary">Register</a></li>
             </ul>
        </nav>
     </header>
+
+    <div class="container">
+
+    </div>
+
     <main>
-        <section>
-            <h1>The largest community of photo enthusiasts</h1>
-            <a href="">Join Today</a>
-        </section>        
-        <section>
-            <h2>Snap photos and share like <br /> never before</h2>
         
-            <!-- Список з  4х елементів -->
-            <ul>
-                <li>
-                    <h3>Sed ut perspiciatis</h3>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        dolores eos qui
-                        ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
-                    <a href="">Learn more</a>
-                </li>
-                <li>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                        enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi. </p>
-                    <a href="">Learn more</a>
-                </li>
-                <li>
-                    <h3>Nemo enim ipsam</h3>
-                    <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                        dolorem ipsum quia
-                        dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
-                    <a href="">Learn more</a>
+        <section class="hero">
+            <h1 class="hero-title">The largest community of photo enthusiasts</h1>
+            <a href="" class="button primery">Join Today</a>
+        </section>    
         
-                </li>
-                <li>
-                    <h3>Tempor incididunt</h3>
-                    <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                        amet,
-                        consectetur,
-                        adipisci velit, sed quia non numquam eius modi tempora. </p>
-                    <a href="">Learn more</a>
-                </li>
-            </ul>
-        </section>
+            <!-- Преимущества -->
+                    <section class="section">
+                        <div class="container">
+                        <h2 class="section-title centeret">Snap photos and share like <br /> never before</h2>
+                    
+                        <!-- Список з  4х елементів -->
+                        <ul class="feauture-list list">
+                            <li>
+                                <h3 class="title">Sed ut perspiciatis</h3>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                                    dolores eos qui
+                                    ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                                <a href="" class="button">Learn more</a>
+                            </li>
+                            <li>
+                                <h3 class="title">Lorem ipsum dolor</h3>
+                                <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim
+                                    veniam, quis nostrud exercitation ullamco laboris nisi. </p>
+                                <a href="" class="button">Learn more</a>
+                            </li>
+                            <li>
+                                <h3 class="title">Nemo enim ipsam</h3>
+                                <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                                    dolorem ipsum quia
+                                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam.</p>
+                                <a href="" class="button">Learn more</a>
+                    
+                            </li>
+                            <li>
+                                <h3 class="title">Tempor incididunt</h3>
+                                <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                                    amet,
+                                    consectetur,
+                                    adipisci velit, sed quia non numquam eius modi tempora. </p>
+                                <a href="" class="button">Learn more</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </section>        
         
-        <section>
-            <h2>Приклади робот</h2>
-            <ul>
-                <li>
-                    <!-- розмір обовязково, щоб не скакав контент -->
-                    <img src="./images/placeholder.png" alt="" width="750">
-                    <h3>Sed ut perspiciatis unde omnis</h3>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        dolores eos qui
-                        ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                </li>
-                <li>
-                    <!-- Розмір обоязково, щоб не скакав контент -->
-                    <h3>Sed ut perspiciatis unde omnis</h3>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                        dolores eos qui
-                        ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                    <img src="./images/placeholder.png" alt="" width="750">
-                </li>
-            </ul>
+        <section class="section no-padding">
+
+            <div class="container">
+
+                <h2 class="section-title">Приклади робот</h2>
+                <ul class="work-list list">
+                    <li class="item">
+                        <!-- розмір обовязково, щоб не скакав контент -->
+                        <img src="./images/placeholder.png" alt="" width="750">
+                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                    </li>
+                    <li class="item">
+                        <!-- Розмір обоязково, щоб не скакав контент -->
+                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        <img src="./images/placeholder.png" alt="" width="750">
+                    </li>
+                                    <ul class="work-list list">
+                    <li class="item">
+                        <!-- розмір обовязково, щоб не скакав контент -->
+                        <img src="./images/placeholder.png" alt="" width="750">
+                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                    </li>
+                    <li class="item">
+                        <!-- Розмір обоязково, щоб не скакав контент -->
+                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        <img src="./images/placeholder.png" alt="" width="750">
+                    </li>
+                    <li class="item">
+                        <!-- Розмір обоязково, щоб не скакав контент -->
+                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                            dolores eos qui
+                            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        <img src="./images/placeholder.png" alt="" width="750">
+                    </li>
+                </ul>
+            </div>
         </section>
         
         <!-- Компанії з якими працюємо -->
-        <section>
-            <h2>You’re in good company</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/company.svg" alt="Логотип компанії">
-                    </a>
-                </li>
-        
-            </ul>
-
-            <!-- signup -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title centeret">You’re in good company</h2>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <ul class="list">
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/company.svg" alt="Логотип компанії">
+                        </a>
+                    </li>
+                
+                </ul>
+                
+                <!-- signup -->
+            </div>
         </section>
-        <h2>Sign up</h2>
+
+
+        <h2 class="section-title">Sign up</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione
             temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!
@@ -156,24 +209,24 @@
 
         <!-- я не Джин :DD -->
         <div>
-            <a href="">Join Today</a>
+            <a href="" class="botton primery">Join Today</a>
             <button>Contacts us</button>
         </div>
 
         <!-- Body вариант 2 -->
-        <section>
-            <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+        <section class="section">
+            <h2 class="section-title">Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p>
             <ul>
-                <li><h3>Lorem ipsum dolor</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <li><h3 class="title">Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </li>
                 <li>
-                    <h3>Lorem ipsum dolor</h3>
+                    <h3 class="title">Lorem ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </li>
                 <li>
-                    <h3>Lorem ipsum dolor</h3>
+                    <h3 class="title">Lorem ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </li>
             </ul>
@@ -181,18 +234,18 @@
         </section>
 
         <!-- Body вариант 3 -->
-        <section>
-            <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
+        <section class="section">
+            <h2 class="section-title">Lorem ipsum dolor sit amet, consectetuer adipiscing</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p>
-            <ul>
+            <ul class="list">
                 <li>
                     <img src="" alt="Квадрат" width="685" height="400">
-                    <h3>Lorem ipsum dolor</h3>
+                    <h3 class="title">Lorem ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </li>
                 <li>
                     <img src="" alt="Квадрат" width="685" height="400">
-                    <h3>Lorem ipsum dolor</h3>
+                    <h3 class="title">Lorem ipsum dolor</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                 </li>            
             </ul>
@@ -201,12 +254,12 @@
 
         <!-- Body вариант 4 -->
 
-        <section>
-            <h2> Lorem ipsum dolor</h2>
+        <section class="section">
+            <h2 class="section-title"> Lorem ipsum dolor</h2>
 
             <p></p>
 
-            <ul>
+            <ul class="list">
                 <li>
                     <a href="">
                         <img src="./images/company.svg" alt="Логотип компанії">
@@ -252,7 +305,7 @@
             </main>
     <footer>
         <!-- Подвал -->
-        <ul>
+        <ul class="list">
             <li>
                 <a href="">Mobile app</a>
             </li>

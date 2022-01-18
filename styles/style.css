@@ -1,0 +1,247 @@
+/* РОЗБИРАЄМО ОСНОВНІ 3-4 КОЛЬОРИ САЙТУ
+
+колір основного тексту
+ #757575; 
+
+другорядний колір тексту 
+rgba (0. 0 . 0 . 0.8) 
+
+білий #ffffff 
+
+ акцент (форми, кнопки  та інше)
+#18AOFB 
+
+ другорядний колір фону 
+#F5F5F5
+
+ФОН
+background: #e5e5e5; */
+
+:root {
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --description-grey-color: rgba(117, 117, 117, 1);
+}
+
+body {
+  background-color: #e5e5e5;
+
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Site navigation */
+
+.list {
+  list-style: none;
+}
+.link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-color);
+  font-family: Raleway, cursive;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-studio {
+  color: var(--title-text-color);
+  font-family: Raleway, cursive;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contact {
+  color: var(--description-grey-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.contact-nav .contact:hover,
+.contact-nav .contact:focus {
+  color: var(--accent-color);
+}
+
+/* HERO */
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--primery-white-color);
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primery-white-color);
+
+  font-size: 16px;
+  line-height: 1.9;
+  padding: 12px 24px;
+  display: inline-block;
+  border: 1px solid black;
+
+  text-decoration: none;
+
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button.primery {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+  border-color: transparent;
+  color: var(--primery-white-color);
+}
+
+/* Feature list */
+
+.title {
+  color: var(--title-text-color);
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.section-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+
+  text-align: center;
+}
+
+.section-text {
+  color: #757575;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.skills {
+  font-size: 16px;
+  line-height: 1.9;
+
+  text-align: center;
+}
+
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Підвал */
+
+.footer {
+  background-color: #2f303a;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.address {
+  color: #ffffff;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* ПОРТФОЛИО */
+
+/* Навигация - page-nav */
+
+.filtrum {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+.page-nav:hover {
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Застосовувати до інтерактивних елементів! ПРИ ПЕРЕКЛЮЧЕННІ"ТАБ", ЛИША НА ПОСИЛАННЯХ, КНОПКАХ!  */
+.page-nav:focus {
+  color: blue;
+}
+
+/* Застосовувати до інтерактивних елементів! ПРИ НАТИСКАННІ */
+.page-nav:active {
+  color: rgb(180, 0, 189);
+}
+
+/* Examples - приклади */
+
+.examples-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.font {
+  font-size: 16px;
+  line-height: 1.9;
+}

@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* знімаємо стандартний марджин (обовязково) */
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: tomato;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: black;
+  background-color: yellowgreen;
+}
+
+.btn-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: skyblue;
+
+  /* центруємо  */
+  vertical-align: middle;
+}
+
+.box {
+  width: 500px;
+  height: 100px;
+  background-color: teal;
+
+  /* /* margin-left: auto;
+  margin-right: auto; 
+       або  */
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  /* ОБОВязково робимо додатковий зазор від основної   
+  ширини сайту - 1200 + 15 + 15 (уточнювати в дизайнера) */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* або 
+  margin: 0 auto; */
+}

@@ -1,0 +1,262 @@
+/* РОЗБИРАЄМО ОСНОВНІ 3-4 КОЛЬОРИ САЙТУ */
+
+/* колір основного тексту
+#000000 */
+
+/* другорядний колір тексту 
+rgba (0. 0 . 0 . 0.8) */
+
+/* білий #ffffff */
+
+/* акцент (форми, кнопки  та інше)
+#18AOFB */
+
+/* другорядний колір фону 
+#F5F5F5 */
+
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #0095ca;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --seconda-bg-color: #f5f5f5;
+}
+
+body {
+  background-color: ffffff;
+  color: var(--primary-text-color);
+
+  font-family: montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Comfortaa;
+}
+
+/* .site-nav a {
+}
+
+.site-nav > li a {
+}
+
+.site-nav a:hover {
+} */
+
+/* ПРИ НАВЕДЕННІ ЗМІНА КОЛЬОРУ */
+
+.page-herder {
+  background-color: #ccc;
+}
+
+.test-link:hover {
+  color: var(--title-text-color);
+}
+
+/* Застосовувати до інтерактивних елементів! ПРИ ПЕРЕКЛЮЧЕННІ"ТАБ", ЛИША НА ПОСИЛАННЯХ, КНОПКАХ!  */
+.test-link:focus {
+  color: blue;
+}
+
+/* Застосовувати до інтерактивних елементів! ПРИ НАТИСКАННІ */
+.test.link:active {
+  color: teal;
+}
+
+.logo {
+  color: red;
+  font-family: Comfortaa, sans-serif;
+  text-decoration: none;
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+
+/* Або якщо потрібно вибірково, створюємо класс list 
+і пвисуємо клас там де потрібні будуть зміни (списки, посилдання) */
+
+ul {
+  list-style: none;
+}
+/* АБО */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Site-nav */
+
+.site-nav .link {
+  color: blue;
+  text-decoration: none;
+  /* Так краще: color: var(--title-text-color); */
+}
+
+.site-nav .test-link:hover,
+.site-nav .test_link:focus {
+  color: #e411dd;
+}
+
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
+/* Hero */
+
+.hero {
+  text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  color: #000000;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+
+  /* Висоту лінії перераховуємо - множник (80/56 = 1.43) */
+  line-height: 1.43;
+}
+
+/* Section */
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  padding-top: 120;
+  padding-bottom: 120;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding: 40px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+/* додатковий класс для централізації заголовків h2 */
+.section-title.centeret {
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+}
+
+.section-description {
+  margin-top: 0;
+  margin-bottom: 80px;
+  font-size: 38px;
+  line-height: 1.39;
+}
+
+/*  Feature  и Examples  */
+
+.feature-list .title,
+.work-list .title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #bd0f0fbf;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.feature-list p {
+  margin-top: 0;
+  margin-bottom: 32;
+}
+.feature-list .text {
+  /* Body */
+  font-size: 18px;
+  list-style: 1.5;
+}
+
+.feature-list .link {
+  color: blue;
+}
+
+/* Examples - приклади */
+
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: rgb(194, 24, 24);
+}
+
+/* Кожен другий ПІДСВІТИТИ */
+.work-list > .item:nth-child(2n) {
+  background-color: var(--seconda-bg-color);
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 11px 32px;
+  min-width: 130px;
+
+  color: var(--title-text-color);
+  background-color: var(--primery-white-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button.primery {
+  background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(-primery-white-color);
+  border-color: var(--accent-color);
+}
+
+/* Оформлення тексту і шрифту W4 */
+
+/* 
+
+відновити все....button 
+
+
+*/
+
+/* Модуль 3. Вебинар 5. Блочная Модель */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  outline: 2px solid yellowgreen;
+
+  /* 
+  height: 100px;
+  background-color: teal; */
+}
