@@ -67,7 +67,7 @@ h6 {
 
 /* Застосовувати до інтерактивних елементів! ПРИ НАТИСКАННІ */
 .test.link:active {
-  color: teal;
+  color: rgb(202, 16, 16);
 }
 
 .logo {
@@ -256,6 +256,8 @@ ul {
   width: 1440px;
   outline: 2px solid yellowgreen;
 
+  padding-right: 20px;
+  padding-left: 20px;
   /* 
   height: 100px;
   background-color: teal; */
