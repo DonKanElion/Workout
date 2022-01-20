@@ -149,6 +149,7 @@ https://cdnjs.com/libraries/normalize - сайт - обераємо версію
   margin-left: auto;
   margin-right: auto;
 
+додатковий зазор:
   padding-left: 15px;
   padding-right: 15px;
 ==============
@@ -159,7 +160,7 @@ min-width: 130px; - мінімальна ширина кнопки
 
 .button {
   display: inline-block;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);  and dashed 
   border-radius: 6px;
   padding: 11px 32px;
   min-width: 130px;
