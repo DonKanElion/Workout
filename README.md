@@ -1,2 +1,5 @@
-# goit-markup-hw-01
-Model 1 - HTML -1 
+# Goit Markup
+
+Курс Full-Stack Devrlopment
+
+Последовательное выполнение домашок по Александру Репете, самостоятельно (без проверок).
