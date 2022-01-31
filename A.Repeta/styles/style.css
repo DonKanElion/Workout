@@ -92,10 +92,53 @@ ul {
   list-style: none;
 }
 
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start   ;
+}
+
+
 /* Site-nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+
+.site-nav .item {
+  /* простий варіант але потрібно підчищати в кінці */
+  margin-right: 40px;
+  background-color: tomato;
+}
+
+/* підчищяємо в кінці */
+.site-nav .item:last-child {
+margin-right: 0;
+}
+або
+/* .site-nav .item:not(last-child) {
+  margin-right: 40;
+  } */
+
+
+
+/* найкращий варіант від Репети
+.site-nav .item+ .item {
+  margin-left: 40px;
+} */
+
+
 .site-nav .link {
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
+
   color: blue;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
   text-decoration: none;
   /* Так краще: color: var(--title-text-color); */
 }
@@ -108,6 +151,18 @@ ul {
 .site-nav .link.current {
   color: var(--title-text-color);
 }
+
+/* Auth nav */
+
+.auth-nav{
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item+ .item {
+  margin-left: 12px;
+}
+
 
 /* Hero */
 
@@ -156,7 +211,8 @@ ul {
 }
 
 /* додатковий класс для централізації заголовків h2 */
-.section-title.centeret {
+.section-title.centered,
+.section-description.centered {
   text-align: center;
 }
 
@@ -172,35 +228,68 @@ ul {
 }
 
 /*  Feature  и Examples  */
+/* 1400 загальнга ширина
+150
 
-.feature-list .title,
+1400 - 150  = 1250  / 2   625  */
+
+.feauture-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+
+.feauture-list .item {
+  width: 625px;
+  margin: 40px 75px;
+  background-color: thistle;
+}
+
+.feauture-list .title,
 .work-list .title {
   margin-top: 0;
   margin-bottom: 24px;
-  color: #bd0f0fbf;
+  color: #020202;
 
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
 }
 
-.feature-list p {
+/* client-list */
+
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-list li {
+  margin: 30px 40px;
+}
+
+.feauture-list p {
   margin-top: 0;
   margin-bottom: 32;
 }
-.feature-list .text {
+.feauture-list .text {
   /* Body */
   font-size: 18px;
   list-style: 1.5;
 }
 
-.feature-list .link {
+.feauture-list .link {
   color: blue;
 }
 
 /* Examples - приклади */
 
 .work-list > .item {
+  display: flex;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: rgb(194, 24, 24);
@@ -209,7 +298,16 @@ ul {
 /* Кожен другий ПІДСВІТИТИ */
 .work-list > .item:nth-child(2n) {
   background-color: var(--seconda-bg-color);
+  flex-direction: row-reverse;
 }
+
+.work-list > .item:nth-child(2n +1) > .content{
+margin-left: 84px;
+}
+
+.work-list > .item:nth-child(2n) > .content{
+  margin-right: 84px;
+  }
 
 .button {
   display: inline-block;
@@ -259,3 +357,35 @@ ul {
   height: 100px;
   background-color: teal; */
 }
+
+.test-container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: turquoise;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-element {
+  width: 380px;
+  background-color: tomato;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.flex-element:nth-child(3n)
+{
+  margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n +3)
+{
+  margin-bottom: 0; 
+}
+ 

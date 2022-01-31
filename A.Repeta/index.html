@@ -19,27 +19,37 @@
 
 
 <body>
+    <section class="test-container">
+        <div class="flex-container">
+            <div class="flex-element">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe cum consectetur delectus assumenda facilis facere beatae et rerum necessitatibus nulla totam vitae odit libero expedita, quidem quas atque sit provident!</div>
+            <div class="flex-element">Cumque tempora aperiam perspiciatis veniam? Eveniet tempora consectetur doloremque impedit quasi odio consequuntur quidem deleniti ab laudantium et, voluptates quis aspernatur! Exercitationem accusamus officia deleniti minima, ad libero est culpa!</div>
+            <div class="flex-element">Sit doloribus corporis explicabo, impedit quod harum fugit at tempora, laboriosam temporibus non fugiat ratione ea iusto quibusdam ab. Harum, neque! Quia ea rerum natus repudiandae explicabo porro voluptatibus illum.</div>
+            <div class="flex-element">Inventore reiciendis porro sed quis reprehenderit! Consequuntur quis modi debitis aperiam, quibusdam culpa minima odio harum. Adipisci tempore officia iste obcaecati doloribus ut, veritatis asperiores at, odio magnam, atque sunt?</div>
+            <div class="flex-element">Incidunt, commodi sapiente? Ullam explicabo iure distinctio sint magni doloribus laudantium, corrupti soluta quo commodi exercitationem, accusantium labore possimus dolores nostrum, numquam sed minus culpa repellat? Provident consequuntur fuga voluptates.</div>
+            <div class="flex-element">Aspernatur officiis, laudantium aliquid atque a voluptate quaerat magni illo beatae ex ipsum ducimus libero eaque possimus dicta. Itaque fugiat blanditiis fuga laudantium quae, obcaecati quam? Totam tempora sequi officia.</div>
+        </div>
+    </section>
+
     <!-- Шапка сайта -->
     <header class="page-herder">
         <!-- NAV - ОСНОВНА навігація  -->
-        <nav class="container">
+        <nav class="container main-nav">
         <!-- посилання (гугл) або слеш "/" - повернення на головну -->
             <a href="http://google.com">
-                <img src="./images/logo.svg" alt="logo">  
-                photo            
+                <img src="./images/logo.svg" alt="logo">
             </a>
-            <ul class="list">
+            <ul class="site-nav list">
                 <!-- Валідна ХОРОША розмітка навігації сайта/меню/список -->
-                <li><a href="">Features</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Community</a></li>
-                <li><a href="">Support</a></li>  
-                <li><a href="./wireframes.html">Wireframes</a></li>
+                <li class="item"><a href="" class="link">Features</a></li>
+                <li class="item"><a href="" class="link">Pricing</a></li>
+                <li class="item"><a href="" class="link">Community</a></li>
+                <li class="item"><a href="" class="link">Support</a></li>  
+                <li class="item"><a href="./wireframes.html"  class="link">Wireframes</a></li>
             </ul>   
 
-            <ul class="list">
-                <li><a href="" class="button primery">Log in</a></li>
-                <li><a href="" class="button secondary">Register</a></li>
+            <ul class="auth-nav list">
+                <li class="item"><a href="" class="button primery">Log in</a></li>
+                <li class="item"><a href="" class="button secondary">Register</a></li>
             </ul>
     </nav>
     </header>
@@ -54,25 +64,25 @@
             <!-- Преимущества -->
                     <section class="section">
                         <div class="container">
-                        <h2 class="section-title centeret">Snap photos and share like <br /> never before</h2>
+                        <h2 class="section-title centered">Snap photos and share like <br /> never before</h2>
                     
                         <!-- Список з  4х елементів -->
                         <ul class="feauture-list list">
-                            <li>
+                            <li class="item">
                                 <h3 class="title">Sed ut perspiciatis</h3>
                                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                                     dolores eos qui
                                     ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
                                 <a href="" class="button">Learn more</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <h3 class="title">Lorem ipsum dolor</h3>
                                 <p>Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                                     enim ad minim
                                     veniam, quis nostrud exercitation ullamco laboris nisi. </p>
                                 <a href="" class="button">Learn more</a>
                             </li>
-                            <li>
+                            <li class="item">
                                 <h3 class="title">Nemo enim ipsam</h3>
                                 <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
                                     dolorem ipsum quia
@@ -80,7 +90,7 @@
                                 <a href="" class="button">Learn more</a>
                     
                             </li>
-                            <li>
+                            <li class="item">
                                 <h3 class="title">Tempor incididunt</h3>
                                 <p>Eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
                                     amet,
@@ -101,43 +111,55 @@
                     <li class="item">
                         <!-- розмір обовязково, щоб не скакав контент -->
                         <img src="./images/placeholder.png" alt="" width="750">
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos qui
                             ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        </div>
                     </li>
                     <li class="item">
                         <!-- Розмір обоязково, щоб не скакав контент -->
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <img src="./images/placeholder.png" alt="" width="750">
+                        <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos qui
                             ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                        <img src="./images/placeholder.png" alt="" width="750">
+                        </div>
+                        
                     </li>
-                                    <ul class="work-list list">
+                       <ul class="work-list list">
                     <li class="item">
                         <!-- розмір обовязково, щоб не скакав контент -->
                         <img src="./images/placeholder.png" alt="" width="750">
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos qui
                             ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+                        </div>
                     </li>
                     <li class="item">
                         <!-- Розмір обоязково, щоб не скакав контент -->
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <img src="./images/placeholder.png" alt="" width="750">
+                        <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos qui
                             ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                        <img src="./images/placeholder.png" alt="" width="750">
+                        </div>
+                        
                     </li>
                     <li class="item">
                         <!-- Розмір обоязково, щоб не скакав контент -->
-                        <h3 class="title">Sed ut perspiciatis unde omnis</h3>
+                        <img src="./images/placeholder.png" alt="" width="750">
+                        <div class="content">
+                            <h3 class="title">Sed ut perspiciatis unde omnis</h3>
                         <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
                             dolores eos qui
                             ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-                        <img src="./images/placeholder.png" alt="" width="750">
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -146,9 +168,9 @@
         <!-- Компанії з якими працюємо -->
         <section class="section">
             <div class="container">
-                <h2 class="section-title centeret">You’re in good company</h2>
-                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-                <ul class="list">
+                <h2 class="section-title centered">You’re in good company</h2>
+                <p class="section-description centered">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <ul class="client-list list">
                     <li>
                         <a href="">
                             <img src="./images/company.svg" alt="Логотип компанії">
