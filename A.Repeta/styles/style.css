@@ -96,7 +96,7 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start   ;
+  justify-content: flex-start;
 }
 
 
@@ -122,9 +122,7 @@ margin-right: 0;
   margin-right: 40;
   } */
 
-
-
-/* найкращий варіант від Репети
+  /* найкращий варіант від Репети
 .site-nav .item+ .item {
   margin-left: 40px;
 } */
@@ -365,6 +363,8 @@ margin-left: 84px;
   margin-right: auto;
   margin-left: auto;
   background-color: turquoise;
+
+  outline: 2px dashed red;
 }
 
 .flex-container {
