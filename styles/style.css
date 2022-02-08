@@ -286,23 +286,27 @@ p {
   text-align: center;
 }
 
+.box {
+  display: flex;
+  justify-content: center;
+}
+
 .team-box {
   margin-right: 30px;
   margin-bottom: 95px;
-
-  display: inline-block;
   border: 270px 370px;
   border-radius: 0px 0px 4px 4px;
-
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff;
 
-  /* outline: 2px solid green; */
+  background-color: #ffffff;
 }
 
-.team-photo {
-  display: inline-block;
+.team-box:last-child {
+  margin-right: 0;
+}
+
+.team-box img {
   margin-bottom: 30px;
 }
 
@@ -414,11 +418,6 @@ p {
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
-
-  background-color: turquoise;
-
-  /* тимчасова міра, для зручності  */
-  outline: 2px dashed red;
 }
 
 .flex-container {
@@ -429,16 +428,9 @@ p {
 
 .flex-element {
   width: 370px;
-  background-color: tomato;
 
   margin-right: 30px;
   margin-bottom: 30px;
-
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #ffffff; */
-
-  outline: 2px solid green;
 }
 
 .flex-element:nth-child(3n) {
@@ -462,8 +454,6 @@ p {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  outline: 2px solid green;
 }
 
 .font {
@@ -475,8 +465,6 @@ p {
 
   font-size: 16px;
   line-height: 1.9;
-
-  outline: 2px solid green;
 }
 
 .hover-text {
