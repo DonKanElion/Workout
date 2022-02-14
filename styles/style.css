@@ -30,6 +30,8 @@ body {
 
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   /* тимчасова міра, для зручності  */
   outline: 2px dashed teal;
